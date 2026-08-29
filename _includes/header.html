@@ -1,0 +1,27 @@
+<header class="site-header">
+  <div class="wrap">
+    <div class="term-bar">
+      <span class="dot red"></span>
+      <span class="dot yellow"></span>
+      <span class="dot green"></span>
+      <span class="term-path">~/cyberpunkid/cybernotes</span>
+    </div>
+
+    <div class="site-title-row">
+      <h1 class="site-title">
+        <a href="{{ '/' | relative_url }}" style="border-bottom:none;color:inherit;">
+          <span class="glitch" data-text="CyberNotes">CyberNotes</span>
+        </a>
+      </h1>
+    </div>
+    <p class="tagline">{{ site.tagline }}</p>
+
+    <nav class="site-nav">
+      <a href="{{ '/' | relative_url }}">home</a>
+      <a href="{{ '/categories/' | relative_url }}">categories</a>
+      <a href="{{ '/tags/' | relative_url }}">tags</a>
+      <a href="{{ '/about/' | relative_url }}">about</a>
+      <a href="{{ site.social.cv_site }}" class="back-to-cv">back to cyberpunkID</a>
+    </nav>
+  </div>
+</header>
