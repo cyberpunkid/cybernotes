@@ -81,5 +81,6 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - README.md
+  - articles
   - vendor
   - node_modules
