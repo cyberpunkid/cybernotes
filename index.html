@@ -3,19 +3,19 @@ layout: default
 title: Home
 ---
 
-<h2 class="section-title">// categories</h2>
+<h2 class="section-title" data-id="// kategori" data-en="// categories">// kategori</h2>
 <div class="cat-grid">
   {% for cat in site.nav_categories %}
     {% assign slug = cat | slugify %}
     {% assign count = site.categories[cat] | size %}
     <a class="cat-card" href="{{ '/categories/#' | append: slug | relative_url }}">
       <div class="cat-name">{{ cat }}</div>
-      <div class="cat-count">{{ count }} artikel</div>
+      <div class="cat-count" data-id="{{ count }} artikel" data-en="{{ count }} articles">{{ count }} artikel</div>
     </a>
   {% endfor %}
 </div>
 
-<h2 class="section-title">// latest articles</h2>
+<h2 class="section-title" data-id="// artikel terbaru" data-en="// latest articles">// artikel terbaru</h2>
 <ul class="article-list">
   {% for post in site.posts limit: 10 %}
     {% include article-card.html post=post %}
@@ -23,5 +23,5 @@ title: Home
 </ul>
 
 {% if site.posts.size > 10 %}
-<p><a href="{{ '/categories/' | relative_url }}">Lihat semua artikel &rarr;</a></p>
+<p><a href="{{ '/categories/' | relative_url }}" data-id="Lihat semua artikel &rarr;" data-en="See all articles &rarr;">Lihat semua artikel &rarr;</a></p>
 {% endif %}

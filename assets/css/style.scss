@@ -150,6 +150,29 @@ a:hover { color: var(--accent); border-bottom-color: var(--accent); }
 }
 .site-nav a.back-to-cv::before { content: "← "; color: var(--accent-3); }
 
+.lang-switch {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  margin-left: 4px;
+}
+.lang-btn {
+  font-family: inherit;
+  font-size: 11px;
+  letter-spacing: 0.5px;
+  background: transparent;
+  color: var(--fg-dim);
+  border: none;
+  padding: 3px 8px;
+  cursor: pointer;
+}
+.lang-btn:hover { color: var(--fg); }
+.lang-btn.active { background: var(--accent-dim); color: var(--bg); font-weight: 700; }
+.lang-btn.active:hover { color: var(--bg); }
+
 /* ---------- Main content ---------- */
 main.wrap { padding-top: 34px; padding-bottom: 60px; min-height: 60vh; }
 

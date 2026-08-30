@@ -14,14 +14,18 @@
         </a>
       </h1>
     </div>
-    <p class="tagline">{{ site.tagline }}</p>
+    <p class="tagline" data-id="{{ site.tagline_id }}" data-en="{{ site.tagline_en }}">{{ site.tagline_id }}</p>
 
     <nav class="site-nav">
-      <a href="{{ '/' | relative_url }}">home</a>
-      <a href="{{ '/categories/' | relative_url }}">categories</a>
-      <a href="{{ '/tags/' | relative_url }}">tags</a>
-      <a href="{{ '/about/' | relative_url }}">about</a>
-      <a href="{{ site.social.cv_site }}" class="back-to-cv">back to cyberpunkID</a>
+      <a href="{{ '/' | relative_url }}" data-id="beranda" data-en="home">beranda</a>
+      <a href="{{ '/categories/' | relative_url }}" data-id="kategori" data-en="categories">kategori</a>
+      <a href="{{ '/tags/' | relative_url }}" data-id="tag" data-en="tags">tag</a>
+      <a href="{{ '/about/' | relative_url }}" data-id="tentang" data-en="about">tentang</a>
+      <a href="{{ site.social.cv_site }}" class="back-to-cv" data-id="kembali ke cyberpunkID" data-en="back to cyberpunkID">kembali ke cyberpunkID</a>
+      <span class="lang-switch" role="group" aria-label="Language / Bahasa">
+        <button type="button" class="lang-btn" data-lang="id" aria-pressed="true">ID</button>
+        <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+      </span>
     </nav>
   </div>
 </header>

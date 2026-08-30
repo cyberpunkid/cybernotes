@@ -4,10 +4,10 @@ title: 404 Not Found
 permalink: /404.html
 ---
 
-<h2 class="section-title">// error</h2>
+<h2 class="section-title" data-id="// error" data-en="// error">// error</h2>
 <pre style="border:1px solid var(--border);padding:16px;color:var(--accent-2);">
 $ curl {{ site.url }}{{ site.baseurl }}{{ page.url }}
 HTTP/1.1 404 Not Found
-&gt; halaman tidak ditemukan.
+&gt; <span data-id="halaman tidak ditemukan." data-en="page not found.">halaman tidak ditemukan.</span>
 </pre>
-<p><a href="{{ '/' | relative_url }}">&larr; kembali ke home</a></p>
+<p><a href="{{ '/' | relative_url }}" data-id="&larr; kembali ke beranda" data-en="&larr; back to home">&larr; kembali ke beranda</a></p>

@@ -1,5 +1,6 @@
 title: "CyberNotes"
-tagline: "Threat Intel, Detection Engineering & AI Security notes"
+tagline_id: "Catatan Threat Intel, Detection Engineering & AI Security"
+tagline_en: "Threat Intel, Detection Engineering & AI Security notes"
 description: >-
   Artikel dan catatan teknis seputar Threat Intelligence, EDR, Wazuh, ESET,
   Linux hardening, MITRE ATT&CK, dan AI Security — bagian dari ekosistem cyberpunkID.
