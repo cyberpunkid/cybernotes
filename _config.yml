@@ -19,8 +19,14 @@ author: "cyberpunkID"
 url: "https://cyberpunkid.github.io"
 baseurl: "/cybernotes"
 
-# SEO-friendly permalinks: /category/subcategory/YYYY/MM/DD/judul-artikel/
-permalink: /:categories/:year/:month/:day/:title/
+# Short, SEO-friendly permalinks: /kategori/judul-artikel/
+# (tanggal tetap tersimpan di nama file _posts/YYYY-MM-DD-judul.md dan tetap
+#  dipakai Jekyll untuk urutan/arsip, cuma tidak lagi muncul di URL)
+# slugified_categories dipakai (bukan :categories) supaya kategori 2 kata
+# seperti "AI Security" / "MITRE ATT&CK" otomatis jadi "ai-security" /
+# "mitre-attck" di URL, bukan spasi mentah. Placeholder ini didukung Jekyll
+# 3.9.x, versi yang dipakai GitHub Pages saat ini.
+permalink: /:slugified_categories/:title/
 
 markdown: kramdown
 kramdown:
