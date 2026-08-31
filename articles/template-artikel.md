@@ -14,20 +14,16 @@ LANGKAH-LANGKAH:
        YYYY-MM-DD-judul-artikel-singkat.md
    Contoh: 2026-09-02-analisis-log-wazuh.md
    → Tanggal di NAMA FILE ini yang menentukan urutan artikel.
-     Artikel terbaru otomatis muncul paling atas di homepage,
-     /categories/, dan /tags/ — tidak perlu setting apa pun lagi.
+     Artikel terbaru otomatis muncul paling atas di homepage dan /tags/
+     — tidak perlu setting apa pun lagi.
 
 3. Isi front matter (bagian antara --- paling atas) sesuai isian di
    bawah:
      - title      : judul artikel
-     - categories : satu kategori, contoh ["Wazuh"].
-                    Kalau mau kategori ini juga muncul sebagai kotak
-                    pintasan di homepage, tambahkan namanya ke
-                    `nav_categories` di _config.yml. Kalau tidak
-                    ditambahkan pun artikelnya TETAP otomatis muncul
-                    di halaman /categories/ dan /tags/, cuma tidak ada
-                    kotak pintasan khusus di homepage.
      - tags       : bebas, boleh lebih dari satu. Contoh: [wazuh, siem]
+                    Tags inilah yang otomatis mengelompokkan artikel di
+                    halaman /tags/ dan di kotak-kotak tag di homepage —
+                    tidak perlu setting tambahan apa pun.
      - excerpt    : ringkasan 1-2 kalimat, tampil di daftar artikel
 
 4. KALAU ARTIKEL PAKAI GAMBAR/SCREENSHOT:
@@ -39,8 +35,8 @@ LANGKAH-LANGKAH:
      - Panggil gambarnya di isi artikel PERSIS seperti contoh di bawah
        (pakai kurung kurawal ganda {{ ... }} ). JANGAN pakai path
        relatif biasa seperti "images/nama.png" — itu akan salah alamat
-       karena URL artikel sekarang pendek (/kategori/judul-artikel/),
-       tidak ikut struktur folder file sumbernya.
+       karena URL artikel sekarang pendek (/judul-artikel/), tidak ikut
+       struktur folder file sumbernya.
 
 5. Hapus seluruh blok komentar ini (dari <!-- paling atas sampai --> di
    bawah ini), lalu tulis isi artikel menggantikan contoh di bawah.
@@ -48,7 +44,6 @@ LANGKAH-LANGKAH:
 -->
 ---
 title: "Judul Artikel di Sini"
-categories: ["Kategori"]
 tags: [tag1, tag2]
 excerpt: "Ringkasan singkat 1-2 kalimat tentang isi artikel ini, akan tampil di daftar artikel."
 ---

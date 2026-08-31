@@ -1,6 +1,5 @@
 ---
 title: "Pengenalan MITRE ATT&CK untuk Blue Team"
-categories: ["MITRE ATT&CK"]
 tags: [framework, blue-team, threat-modeling]
 excerpt: "Struktur dasar MITRE ATT&CK — tactics, techniques, sub-techniques — dan cara memetakannya ke detection rule."
 ---

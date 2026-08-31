@@ -3,13 +3,15 @@ layout: default
 title: Home
 ---
 
-<h2 class="section-title" data-id="// kategori" data-en="// categories">// kategori</h2>
+<h2 class="section-title" data-id="// tags" data-en="// tags">// tags</h2>
 <div class="cat-grid">
-  {% for cat in site.nav_categories %}
-    {% assign slug = cat | slugify %}
-    {% assign count = site.categories[cat] | size %}
-    <a class="cat-card" href="{{ '/categories/#' | append: slug | relative_url }}">
-      <div class="cat-name">{{ cat }}</div>
+  {% assign sorted_tags = site.tags | sort %}
+  {% for tag in sorted_tags %}
+    {% assign tag_name = tag[0] %}
+    {% assign tag_slug = tag_name | slugify %}
+    {% assign count = tag[1].size %}
+    <a class="cat-card" href="{{ '/tags/#' | append: tag_slug | relative_url }}">
+      <div class="cat-name">#{{ tag_name }}</div>
       <div class="cat-count" data-id="{{ count }} artikel" data-en="{{ count }} articles">{{ count }} artikel</div>
     </a>
   {% endfor %}
@@ -23,5 +25,5 @@ title: Home
 </ul>
 
 {% if site.posts.size > 10 %}
-<p><a href="{{ '/categories/' | relative_url }}" data-id="Lihat semua artikel &rarr;" data-en="See all articles &rarr;">Lihat semua artikel &rarr;</a></p>
+<p><a href="{{ '/tags/' | relative_url }}" data-id="Lihat semua artikel &rarr;" data-en="See all articles &rarr;">Lihat semua artikel &rarr;</a></p>
 {% endif %}

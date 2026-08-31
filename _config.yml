@@ -19,14 +19,10 @@ author: "cyberpunkID"
 url: "https://cyberpunkid.github.io"
 baseurl: "/cybernotes"
 
-# Short, SEO-friendly permalinks: /kategori/judul-artikel/
+# Short, SEO-friendly permalinks: /judul-artikel/
 # (tanggal tetap tersimpan di nama file _posts/YYYY-MM-DD-judul.md dan tetap
 #  dipakai Jekyll untuk urutan/arsip, cuma tidak lagi muncul di URL)
-# slugified_categories dipakai (bukan :categories) supaya kategori 2 kata
-# seperti "AI Security" / "MITRE ATT&CK" otomatis jadi "ai-security" /
-# "mitre-attck" di URL, bukan spasi mentah. Placeholder ini didukung Jekyll
-# 3.9.x, versi yang dipakai GitHub Pages saat ini.
-permalink: /:slugified_categories/:title/
+permalink: /:title/
 
 markdown: kramdown
 kramdown:
@@ -60,18 +56,6 @@ defaults:
       type: "pages"
     values:
       layout: "default"
-
-# List of categories shown in the nav / sidebar. Extend freely — new posts
-# using a category not listed here still work, they just won't get a
-# dedicated nav shortcut unless you add them here too.
-nav_categories:
-  - "Threat Intelligence"
-  - "EDR"
-  - "Wazuh"
-  - "ESET"
-  - "Linux"
-  - "MITRE ATT&CK"
-  - "AI Security"
 
 social:
   github: "https://github.com/cyberpunkid"

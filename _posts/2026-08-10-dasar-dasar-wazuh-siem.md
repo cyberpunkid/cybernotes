@@ -1,6 +1,5 @@
 ---
 title: "Dasar-Dasar Wazuh sebagai SIEM/XDR"
-categories: ["Wazuh"]
 tags: [siem, xdr, open-source]
 excerpt: "Komponen utama Wazuh (manager, indexer, agent) dan langkah awal membuat custom detection rule."
 ---

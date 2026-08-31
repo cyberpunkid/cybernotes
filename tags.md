@@ -4,7 +4,7 @@ title: Tags
 permalink: /tags/
 ---
 
-<p data-id="Daftar tag otomatis dari seluruh artikel. Tambahkan &lt;code&gt;tags: [wazuh, siem]&lt;/code&gt; di front matter artikel baru untuk menambah entri di sini." data-en="Tag list is generated automatically from all articles. Add &lt;code&gt;tags: [wazuh, siem]&lt;/code&gt; to a new article's front matter to add an entry here.">Daftar tag otomatis dari seluruh artikel. Tambahkan <code>tags: [wazuh, siem]</code> di front matter artikel baru untuk menambah entri di sini.</p>
+<p data-id="Semua artikel dikelompokkan otomatis berdasarkan tags. Tambahkan &lt;code&gt;tags: [wazuh, siem]&lt;/code&gt; di front matter artikel baru di folder &lt;code&gt;_posts/&lt;/code&gt; untuk menambah entri di sini — halaman ini update sendiri, tidak perlu diedit manual." data-en="All articles are grouped automatically by tags. Add &lt;code&gt;tags: [wazuh, siem]&lt;/code&gt; to a new article's front matter in the &lt;code&gt;_posts/&lt;/code&gt; folder to add an entry here — this page updates itself, no manual editing needed.">Semua artikel dikelompokkan otomatis berdasarkan tags. Tambahkan <code>tags: [wazuh, siem]</code> di front matter artikel baru di folder <code>_posts/</code> untuk menambah entri di sini — halaman ini update sendiri, tidak perlu diedit manual.</p>
 
 {% assign sorted_tags = site.tags | sort %}
 <div style="margin-bottom:24px;">

@@ -87,7 +87,6 @@ a:hover { color: var(--accent); border-bottom-color: var(--accent); }
   position: relative;
   letter-spacing: 0.5px;
 }
-.site-title::before { content: "root@cyberpunkid:~$ "; color: var(--fg-dim); font-size: 14px; font-weight: 400; display: block; margin-bottom: 4px; }
 
 /* glitch effect */
 .glitch {
@@ -207,13 +206,6 @@ main.wrap { padding-top: 34px; padding-bottom: 60px; min-height: 60vh; }
   flex-wrap: wrap;
   margin-bottom: 6px;
 }
-.article-meta .cat {
-  color: var(--bg);
-  background: var(--accent);
-  padding: 1px 6px;
-  border-radius: var(--radius);
-  font-weight: 700;
-}
 .article-card h3 {
   margin: 0 0 6px;
   font-size: 17px;
@@ -232,7 +224,7 @@ main.wrap { padding-top: 34px; padding-bottom: 60px; min-height: 60vh; }
   margin: 2px 4px 2px 0;
 }
 
-/* ---------- Category grid (home) ---------- */
+/* ---------- Tag grid (home) ---------- */
 .cat-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
